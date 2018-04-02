@@ -64,6 +64,11 @@ namespace DiscUtils.Lvm
                 locations.Add(location);
             }
             RawLocations = locations.ToArray();
+            Metadata = string.Empty;
+            ParsedMetadata = new Metadata()
+            {
+                VolumeGroupSections = new MetadataVolumeGroupSection[0]
+            };
             foreach (var location in RawLocations)
             {
                 if ((location.Flags & RawLocationFlags.Ignored) != 0)

@@ -19,6 +19,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild Condition="'$(Configuration)' != 'Debug'">True</GeneratePackageOnBuild>
+    <Version>0.13.0-alpha-zvm</Version>
   </PropertyGroup>
 
   <ItemGroup>
